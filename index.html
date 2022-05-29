@@ -80,14 +80,63 @@
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 320 512"
                         width="18"
-                        height="18"                      >
+                        height="18">
                         <path
                           d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
                         />
-                      
-                      </svg>
-                    </button>
+                         </svg>
+                        </button>
+
+                        <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
+                        
+                        <form class="modal-form" autocomplete="off">
+
+                            <label class="form-modal-group">
+                                <span class="form-modal-label">Имя</span>
+                                <span class="form-modal-conteiner">
+                                    <input class="form-modal-icon" type="text" name="name">
+
+                                    <svg class="form-img" width="18" height="18">
+                                        <use href="./images/svg/symbol-defs.svg#person-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+
+                            <label class="form-modal-group">
+                                <span class="form-modal-label">Телефон</span>
+                                <span class="form-modal-conteiner">
+                                    <input class="form-modal-icon" type="tel" name="phone" >
+                                    <svg class="form-img" width="18" height="18">
+                                        <use href="./images/svg/symbol-defs.svg#phone-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+
+                            <label class="form-modal-group">
+                                <span class="form-modal-label">Почта</span>
+                                <span class="form-modal-conteiner">
+                                    <input class="form-modal-icon" type="email" name="email" >
+                                    <svg class="form-img" width="18" height="18">
+                                        <use href="./images/svg/symbol-defs.svg#email-black"></use>
+                                    </svg>
+                                </span>
+
+                            </label>
+
+                            <label class="form-modal-group comments">
+                                <span class="form-modal-label">Комментарий</span>
+                                <textarea class="form-comments" name="comments" placeholder="Введите текст">
+                                </textarea>
+                            </label>
+
+
+
+                            <button class="ok-btn" type="submit">Отправить</button>
+
+                        </form>
+
                     </div>
+                   
                 </div>
             </div>
 
@@ -396,7 +445,7 @@
         
         <div class="container adrs-container">
 
-            <div class="">
+            <div class="logo-adr">
                 <a class="logo-list" href="/" lang="en"> Web<span class="logo-white">Studio</span></a>
 
                 <address>
@@ -454,32 +503,26 @@
             <div class="form-footer">
                 <p class="form-title">Подпишитесь на рассылку</p>
 
-                <form class="contact-form" name="contact-form">
-                    <label class="contact-group" for="email">
+                <form class="contact-form" name="contact-form" autocomplete="off">
+                    <label class="contact-group visually-hidden" for="email"> Почта </label>
 
                         <input 
                         class="contact-input" 
                         type="email" 
                         name="email" 
+                        id="email"
                         placeholder="E-mail"/>
 
                         
-                        <button class="contact-btn" type="submit">Подписаться
-                            <span> 
+                        <button class="contact-btn" type="submit"> <span class="contact-btn-footer">Подписаться
+                            
                                 <svg class="contact-icon" width="24" height="24">
                                     <use href="./images/svg/symbol-defs.svg#icon-send"></use>
                                 </svg>
                             </span>
                         </button>
-                    
-                    </label>
-
 
                 </form>
-
-
-
-
 
             </div>
 
@@ -487,8 +530,8 @@
     </footer>
 
 
-<script src="./js/modal.js"></script>
+        <script src="./js/modal.js"></script>
 
-</body>
+    </body>
 
 </html>
